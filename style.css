@@ -31,10 +31,44 @@ li a {
   font-size: 20px;
 }
 
+/* Welcome panel styling */
+
+.cont {
+  padding: 0px;
+  text-align: center;
+  height: 700px;
+  overflow: hidden;
+}
+
+.welcomeImg {
+  width: 100%;
+}
+
+.overlay {
+  color: #b19cd9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 125px;
+}
+
 /* Media Queries */
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 766px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .navicon {
     width: 7%;
+  }
+
+  .welcomeImg {
+    width: 1000px;
+  }
+
+  .overlay {
+    font-size: 100px;
   }
 }
