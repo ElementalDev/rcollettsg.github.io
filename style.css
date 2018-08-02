@@ -1,6 +1,7 @@
 body {
   background-color: white;
   margin: 0;
+  background-color: #333;
 }
 
 /* Style for the nav bar */
@@ -27,7 +28,7 @@ body {
 }
 
 li a {
-  color: white;
+  color:  #b19cd9;
   font-size: 20px;
 }
 
@@ -53,6 +54,24 @@ li a {
   font-size: 125px;
 }
 
+/* Style for about me section */
+
+.aboutMeCont, .aboutMeImg {
+  color: #b19cd9;
+  border: 2px solid #b19cd9;
+}
+
+.aboutMeCont h2 {
+  font-size: 50px;
+}
+
+.aboutMeTxt {
+  font-size: 20px;
+}
+
+.aboutMeTxt ul {
+  font-size: 20px;
+}
 /* Media Queries */
 
 @media screen and (max-width: 766px) {
@@ -70,5 +89,13 @@ li a {
 
   .overlay {
     font-size: 100px;
+  }
+
+  .aboutMeCont {
+    text-align: center;
+  }
+
+  ul li {
+    list-style-type: none;
   }
 }
