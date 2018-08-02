@@ -3,23 +3,53 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>R Collett Developer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="style.css">
+    <title>R Collett Developer</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row navBar">
-        <div class="col-sm-4 navBar">
-          <img src="" alt="This is logo">
+    <nav class="navbar navbar-fixed-top hidden-xs">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img class="navicon" src="Images/navicon.png" alt="Logo">
         </div>
-        <ul class="col-sm-6 col-sm-offset-1 col-md-offset-2 nav nav-pills">
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Technical Experience</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact me</a></li>
-        </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Tech XP</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-fixed-top visible-xs">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img class="navicon" src="Images/navicon.png" alt="Logo">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Tech XP</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+
       </div>
     </div>
   </body>
