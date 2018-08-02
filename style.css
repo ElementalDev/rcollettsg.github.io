@@ -7,11 +7,9 @@ body {
 .navicon {
   display: inline-block;
   width: 20%;
-  background-color: white;
 }
 
 .navbar {
-  background-color: white;
   border: none;
   border-radius: 0px;
 }
@@ -25,7 +23,12 @@ body {
 }
 
 .navbar-toggle, .icon-bar {
-  border: 1px solid black;
+  border: 1px solid white;
+}
+
+li a {
+  color: white;
+  font-size: 20px;
 }
 
 /* Media Queries */
