@@ -2,6 +2,7 @@ body {
   background-color: white;
   margin: 0;
   background-color: #333;
+  color: #bb44f0;
 }
 
 /* Style for the nav bar */
@@ -42,7 +43,6 @@ body {
 }
 
 .overlay {
-  color: #bb44f0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -51,11 +51,6 @@ body {
 }
 
 /* Style for about me section */
-
-.aboutMeCont, .aboutMeImg {
-  color: #bb44f0;
-  border: 1px solid #bb44f0;
-}
 
 .aboutMeCont h2 {
   font-size: 50px;
@@ -68,6 +63,17 @@ body {
 .quals li {
   font-size: 20px
 }
+/*  Styles for projects section */
+
+
+
+
+/* Misc styles */
+
+.aboutMeCont, .aboutMeImg, .techxp {
+  border: 1px solid #bb44f0;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 766px) {
