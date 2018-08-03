@@ -86,7 +86,7 @@ h2, h3, h4 {
   border-radius: 20px;
   text-align: center;
   padding: 3px;
-  margin-top 2px;
+  margin-top: 2px;
 }
 
 .progLangs {
@@ -101,17 +101,29 @@ h2, h3, h4 {
 
 /*  Styles for Projects section */
 
+#project {
+  margin-bottom: 30px;
+}
+
+.imageCont {
+  height: 300px;
+  line-height: 300px;
+}
+
 .projImg {
+  align-items: center;
   width: 100%;
 }
 
 .imgCap {
   height: 200px;
-  font-size: 20px;
+  font-size: 16px;
   overflow: auto;
+  text-align: center;
 }
 
 /* Footer styles */
+
 footer{
   text-align: center;
 }
@@ -122,7 +134,7 @@ footer i {
 
 /* Misc styles */
 
-.aboutMeImg, .projImg, .imgCap, footer{
+.aboutMeImg, .imgCap, footer{
   border: 1px solid #bb44f0;
 }
 
@@ -163,5 +175,24 @@ footer i {
 
   ul li {
     list-style-type: none;
+  }
+  .imageCont {
+    height: 300px;
+    line-height: 300px;
+  }
+
+  .projImg {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 55%;
+  }
+
+  .imgCap {
+    height: 150px;
+    font-size: 16px;
+    overflow: auto;
+    text-align: center;
+    margin-top: -50px;
   }
 }
