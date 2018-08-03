@@ -11,8 +11,9 @@ body {
 }
 
 .navbar {
-  border: none;
+  border: 1px solid #bb44f0;
   border-radius: 0px;
+  font-size: 30px;
 }
 
 .white {
@@ -25,11 +26,6 @@ body {
 
 .navbar-toggle, .icon-bar {
   border: 1px solid white;
-}
-
-li a {
-  color:  #b19cd9;
-  font-size: 20px;
 }
 
 /* Welcome panel styling */
@@ -46,7 +42,7 @@ li a {
 }
 
 .overlay {
-  color: #b19cd9;
+  color: #bb44f0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -57,8 +53,8 @@ li a {
 /* Style for about me section */
 
 .aboutMeCont, .aboutMeImg {
-  color: #b19cd9;
-  border: 2px solid #b19cd9;
+  color: #bb44f0;
+  border: 1px solid #bb44f0;
 }
 
 .aboutMeCont h2 {
@@ -69,8 +65,8 @@ li a {
   font-size: 20px;
 }
 
-.aboutMeTxt ul {
-  font-size: 20px;
+.quals li {
+  font-size: 20px
 }
 /* Media Queries */
 
