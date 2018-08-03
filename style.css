@@ -2,7 +2,6 @@
 
 body {
   background-color: white;
-  margin: 0;
   background-color: #333;
   color: #bb44f0;
   font-family: 'Roboto Slab', serif;
@@ -10,6 +9,10 @@ body {
 
 h2, h3, h4 {
   color: #9d9d9d;
+}
+
+.row {
+  padding: 10px;
 }
 
 /* Style for the nav bar */
@@ -49,7 +52,7 @@ h2, h3, h4 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -80%);
   font-size: 125px;
   color: #9b9b9b;
 }
@@ -66,6 +69,13 @@ h2, h3, h4 {
 
 .quals li {
   font-size: 20px
+}
+
+.aboutMeImg {
+  width: 70%;
+  border-radius: 100%;
+  margin-left: 15%;
+  margin-top: 20%;
 }
 
 /* Styles for TechXP section */
@@ -91,17 +101,40 @@ h2, h3, h4 {
 
 /*  Styles for Projects section */
 
+.imgCont {
+  height: 100px;
+}
 
+.projImg {
+  width: 100%;
+}
 
+.imgCap {
+  height: 200px;
+  font-size: 20px;
+  overflow: auto;
+}
 
 /* Misc styles */
 
 .aboutMeCont, .aboutMeImg, .techxp,
-.projects, figure, figcaption{
+.projects, .projImg, .imgCap{
   border: 1px solid #bb44f0;
 }
 
 /* Media Queries */
+
+@media screen and (max-width: 1367px) {
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 125px;
+    color: #9b9b9b;
+  }
+
+}
 
 @media screen and (max-width: 766px) {
   body {
