@@ -101,10 +101,6 @@ h2, h3, h4 {
 
 /*  Styles for Projects section */
 
-.imgCont {
-  height: 100px;
-}
-
 .projImg {
   width: 100%;
 }
@@ -115,10 +111,18 @@ h2, h3, h4 {
   overflow: auto;
 }
 
+/* Footer styles */
+footer{
+  text-align: center;
+}
+
+footer i {
+  font-size: 3.6em;
+}
+
 /* Misc styles */
 
-.aboutMeCont, .aboutMeImg, .techxp,
-.projects, .projImg, .imgCap{
+.aboutMeImg, .projImg, .imgCap, footer{
   border: 1px solid #bb44f0;
 }
 
