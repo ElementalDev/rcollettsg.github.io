@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -52,16 +54,16 @@
     <!-- Welcome Container -->
     <div class="container-fluid cont">
       <div class="row">
-        <img class="welcomeImg" src="Images/code-back.jpg" alt="Welcome background">
+        <img class="welcomeImg" src="Images/welcomebg.gif" alt="Welcome background">
         <h1 class="overlay">Welcome to RCollettSG</h1>
       </div>
     </div>
     <!-- About me / Tech XP / Projects -->
     <div class="container-fluid">
       <!-- About me -->
-      <div id="aboutme" class="row">
+      <div class="row">
         <main class="col-sm-8 aboutMeCont">
-          <h2>Reece Collett</h2>
+          <h2 id="aboutme">Reece Collett</h2>
           <h3>Trainee IT Consultant at Sparta Global | Junior Software Developer</h3>
           <p class="aboutMeTxt">
             My name is Reece Collett and I am a trainee IT Consultant at Sparta Global. Sparta has and is
@@ -92,11 +94,11 @@
         </aside>
       </div>
       <!-- Tech XP -->
-      <div id="techxp" class="row techxp">
+      <div class="row techxp">
         <div class="col-sm-12">
-          <h1>Tech XP - My Technical Experience</h1>
-          <div class="col-sm-12">
-            <h2>Application languages</h2>
+          <h2 id="techxp">Tech XP - My Technical Experience</h2>
+          <h3>Application languages</h3>
+          <div class="col-sm-12 langBox">
             <div class="col-sm-3">
               <p class="progLangs">VB.Net</p>
             </div>
@@ -107,8 +109,8 @@
               <p class="progLangs">C++</p>
             </div>
           </div>
-            <div class="col-sm-12">
-              <h2>Front-End Web Languages</h2>
+            <h3>Front-End Web Languages</h3>
+            <div class="col-sm-12 langBox">
               <div class="col-sm-3">
                 <p class="progLangs">HTML - up to HTML5</p>
               </div>
@@ -119,14 +121,14 @@
                 <p class="progLangs">JavaScript</p>
               </div>
             </div>
-            <div class="col-sm-12">
-              <h2>Back-End Web Languages</h2>
+            <h3>Back-End Web Languages</h3>
+            <div class="col-sm-12 langBox">
               <div class="col-sm-3">
                 <p class="progLangs">PHP</p>
               </div>
             </div>
-            <div class="col-sm-12">
-              <h2>Frameworks</h2>
+            <h3>Frameworks</h3>
+            <div class="col-sm-12 langBox">
               <div class="col-sm-3">
                 <p class="progLangs">SASS</p>
               </div>
@@ -137,18 +139,43 @@
                 <p class="progLangs">jQuery</p>
               </div>
             </div>
+            <h3>Databases</h3>
+            <div class="col-sm-12 langBox">
+              <div class="col-sm-3">
+                <p class="progLangs">MSSQL - T-SQL</p>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- Projects -->
-      <div id="projects" class="row projects">
+      </div>
+      <!-- Projects  -->
+      <div class="row projects">
+        <h2 id="projects">Projects</h2>
         <figure class="col-sm-4 projImg">
           <img src="" alt="TTMS">
           <figcaption>
+            This is my final college project, written in C#. The user would be
+            given a log in or has been made one (only the admins can make one)
+            and then they would need to fill out a form to give their personal
+            information, days that they were free and their learning style. An
+            automated class then went through an Access Database to find a tutor
+            with the same or close to the same schedule and the same learning style.
           </figcaption>
         </figure>
         <figure class="col-sm-4 projImg">
           <img src="" alt="The Cave">
           <figcaption>
+            This project is still a work in progress. The game involves the player
+            choosing a profession at the beginning of the game. All the professions,
+            weapons, armours and enemies have an is-a relationship with classes of the
+            same name to prevent having to rewrite code that is common. They then need
+            to choose a difficulty, which will determine how many moves they have to escape
+            the cave. They then have to escape by going either forward, back, left or right.
+            A RND determines when enemies spawn and when helpful items spawn so the user
+            cant determine when something is going to happen. Once they escape, they can have
+            one of 3 different endings, depending on how they got out, what they collected and
+            their health at the end. This was done using several classes and procedures as well
+            as concepts such as encapsulation and inheritance.
           </figcaption>
         </figure>
         <figure class="col-sm-4 projImg">
