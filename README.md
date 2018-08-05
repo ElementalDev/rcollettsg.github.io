@@ -31,6 +31,6 @@ This section shows you an image of either code or logo used when completing the 
 
 ### Contact Me
 
-This section tells you how you can get a hold of me on social media, github and email.
+This section tells you how you can get a hold of me on social media, GitHub and email.
 
 ![Contact Me Section](Images/Readme/contact.png)
