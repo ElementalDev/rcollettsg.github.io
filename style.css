@@ -104,20 +104,24 @@ h2, h3, h4 {
   margin-bottom: 30px;
 }
 
+.titleCont {
+  height: 100px;
+  line-height: 100px;
+}
+
+.projTitle {
+  text-align: center;
+  align-items: center;
+  text-decoration: underline;
+}
+
 .imageCont {
   height: 300px;
   line-height: 300px;
 }
 
 .projImg {
-  align-items: center;
   width: 100%;
-}
-
-.projImgCollapse {
-  display: block;
-  width: 80%;
-  margin: auto;
 }
 
 .imgCap {
@@ -127,19 +131,25 @@ h2, h3, h4 {
   text-align: center;
 }
 
-.panel {
-  background-color: #9d9d9d;
-  color: white;
-  font-weight: bold;
-}
-
-.projTitle {
+.projTitleCollapse {
   font-size: 16px;
   border: 1px solid #bb44f0;
   background-color: #bb44f0;
   text-align: center;
   padding: 5px;
   border-radius: 20px;
+}
+
+.projImgCollapse {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.panel {
+  background-color: #9d9d9d;
+  color: white;
+  font-weight: bold;
 }
 
 .panel-footer {
