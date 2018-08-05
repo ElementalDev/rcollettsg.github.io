@@ -1,3 +1,5 @@
+/* Master Styles */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
 body {
@@ -13,6 +15,10 @@ h2, h3, h4 {
 
 .row {
   padding: 10px;
+}
+
+.aboutMeImg, .imgCap, footer{
+  border: 1px solid #bb44f0;
 }
 
 /* Style for the nav bar */
@@ -142,8 +148,8 @@ h2, h3, h4 {
 
 .projImgCollapse {
   display: block;
-  width: 80%;
   margin: auto;
+  width: 425px;
 }
 
 .panel {
@@ -164,12 +170,6 @@ footer{
 
 footer i {
   font-size: 3.6em;
-}
-
-/* Misc styles */
-
-.aboutMeImg, .imgCap, footer{
-  border: 1px solid #bb44f0;
 }
 
 /* Media Queries */
@@ -207,8 +207,10 @@ footer i {
     text-align: center;
   }
 
-  ul li {
-    list-style-type: none;
+  ul, li {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
   }
   .imageCont {
     height: 300px;
@@ -228,5 +230,25 @@ footer i {
     overflow: auto;
     text-align: center;
     margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 497px) {
+  .overlay {
+    font-size: 75px;
+  }
+
+ .projImgCollapse {
+    display: block;
+    margin: auto;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+ .projImgCollapse {
+    display: block;
+    margin: auto;
+    width: 300px;
   }
 }
