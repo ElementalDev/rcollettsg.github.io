@@ -114,6 +114,12 @@ h2, h3, h4 {
   width: 100%;
 }
 
+.projImgCollapse {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
 .imgCap {
   height: 200px;
   font-size: 16px;
