@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- CDN FontAwesome for glyphs -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- CDN BootStrap for responsive design -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- CDN jQuery for use of all BootStrap features -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
+    <!-- My Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <title>R Collett Developer</title>
   </head>
@@ -30,7 +34,7 @@
         </div>
       </div>
     </nav>
-    <!-- Nav bar for mobile -->
+    <!-- Nav bar for mobile using a collapsible menu -->
     <nav class="navbar navbar-inverse navbar-fixed-top visible-xs">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -92,6 +96,10 @@
           <img class="aboutMeImg" src="Images/profilepic.png" alt="Profile Picture">
         </aside>
       </div>
+      <div class="container">
+        <div class="row divider">
+        </div>
+      </div>
       <!-- Tech XP -->
       <div class="row techxp">
         <div class="col-sm-12">
@@ -146,12 +154,19 @@
             </div>
           </div>
         </div>
-      <!-- Projects  -->
+        <div class="container">
+          <div class="row divider">
+          </div>
+        </div>
+      <!-- Projects for desktop  -->
       <div class="row">
         <h2 id="project"><i class="fas fa-project-diagram"></i> Projects</h2>
-        <div class="col-sm-3">
+        <div class="col-sm-3 hidden-xs">
+          <div class="titleCont">
+            <h3 class="projTitle">Tutor Student Matching System</h3>
+          </div>
           <div class="imageCont">
-            <img class="projImg" src="Images/ttms.png" alt="TTMS">
+            <img class="projImg" src="Images/tsms.png" alt="TSMS">
           </div>
           <div class="imgCap">
             This is my final college project, written in C#. The user would be
@@ -162,7 +177,10 @@
             with the same or close to the same schedule and the same learning style.
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 hidden-xs">
+          <div class="titleCont">
+            <h3 class="projTitle">The Cave</h3>
+          </div>
           <div class="imageCont">
             <img class="projImg" src="Images/TheCave.png" alt="The Cave">
           </div>
@@ -180,7 +198,10 @@
             as concepts such as encapsulation and inheritance.
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 hidden-xs">
+          <div class="titleCont">
+            <h3 class="projTitle">rcprogramming.co.uk (Online Portfolio)</h3>
+          </div>
           <div class="imageCont">
             <img class="projImg" src="Images/rcprog.png" alt="rcprogramming">
           </div>
@@ -190,7 +211,10 @@
             and all of my projects that I have done up to this point, including the site itself.
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 hidden-xs">
+          <div class="titleCont">
+            <h3 class="projTitle">melissa-jayne.co.uk (Online Portfolio)</h3>
+          </div>
           <div class="imageCont">
             <img class="projImg" src="Images/melj.png" alt="melissa-jayne">
           </div>
@@ -198,6 +222,105 @@
             This is my partners online portfolio that I created using the web development trifecta (HTML, CSS and JS)
             as well as frameworks such as BootStrap and jQuery. I also used PHP to request images from a database so that
             it would display them correctly.
+          </div>
+        </div>
+      </div>
+      <!-- Projects for mobile using collapsible panels -->
+      <div class="row  visible-xs">
+        <h4>Click a project to find out more!</h4>
+        <div class="panel-group">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title projTitleCollapse">
+                <a data-toggle="collapse" href="#collapse1">Tutor Student Matching System</a>
+              </h3>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="imageCont">
+                  <img class="projImgCollapse" src="Images/tsms.png" alt="TSMS">
+                </div>
+              </div>
+              <div class="panel-footer">
+                This is my final college project, written in C#. The user would be
+                given a log in or has been made one (only the admins can make one)
+                and then they would need to fill out a form to give their personal
+                information, days that they were free and their learning style. An
+                automated class then went through an Access Database to find a tutor
+                with the same or close to the same schedule and the same learning style.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-group">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title projTitleCollapse">
+                <a data-toggle="collapse" href="#collapse2">The Cave</a>
+              </h3>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="imageCont">
+                  <img class="projImgCollapse" src="Images/TheCave.png" alt="The Cave">
+                </div>
+              </div>
+              <div class="panel-footer">
+                This project is still a work in progress. The game involves the player
+                choosing a profession at the beginning of the game. All the professions,
+                weapons, armours and enemies have an is-a relationship with classes of the
+                same name to prevent having to rewrite code that is common. They then need
+                to choose a difficulty, which will determine how many moves they have to escape
+                the cave. They then have to escape by going either forward, back, left or right.
+                A RND determines when enemies spawn and when helpful items spawn so the user
+                cant determine when something is going to happen. Once they escape, they can have
+                one of 3 different endings, depending on how they got out, what they collected and
+                their health at the end. This was done using several classes and procedures as well
+                as concepts such as encapsulation and inheritance.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-group">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title projTitleCollapse">
+                <a data-toggle="collapse" href="#collapse3">rcprogramming.co.uk (Online Portfolio)</a>
+              </h3>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="imageCont">
+                  <img class="projImgCollapse" src="Images/rcprog.png" alt="TSMS">
+                </div>
+              </div>
+              <div class="panel-footer">
+                This is my online portfolio that I created using the web development trifecta (HTML, CSS and JS)
+                as well as frameworks such as BootStrap and jQuery. This is meant to be a projection of myself
+                and all of my projects that I have done up to this point, including the site itself.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-group">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title projTitleCollapse">
+                <a data-toggle="collapse" href="#collapse4">melissa-jayne.co.uk (Online Portfolio)</a>
+              </h3>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="imageCont">
+                  <img class="projImgCollapse" src="Images/melj.png" alt="TSMS">
+                </div>
+              </div>
+              <div class="panel-footer">
+                This is my partners online portfolio that I created using the web development trifecta (HTML, CSS and JS)
+                as well as frameworks such as BootStrap and jQuery. I also used PHP to request images from a database so that
+                it would display them correctly.
+              </div>
+            </div>
           </div>
         </div>
       </div>
