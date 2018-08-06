@@ -3,6 +3,16 @@
 
 This is my online portfolio that I created whilst at Sparta global.
 
+## Requirements
+
+- [x] Mobile first  
+- [x] Glyphs to be used  
+- [x] Use BootStrap  
+- [x] Use Google fonts  
+- [x] Use grid layouts  
+- [x] On GitHub pages  
+- [x] Create navbar  
+
 To launch, go to [rcollettsg.github.io](rcollettsg.github.io)
 
 ![Website Snapshot](Images/Readme/siteshot.png)
