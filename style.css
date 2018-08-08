@@ -1,0 +1,265 @@
+/* Master Styles */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body {
+  background-color: white;
+  background-color: #333;
+  color: #bb44f0;
+  font-family: 'Roboto Slab', serif;
+}
+
+h2, h3, h4 {
+  color: #9d9d9d;
+}
+
+.row {
+  padding: 10px;
+}
+
+.aboutMeImg, .imgCap, footer{
+  border: 3px solid #9d9d9d;
+}
+
+.divider {
+  height: 1px;
+  border-bottom: 2px solid #9d9d9d;
+}
+
+/* Style for the nav bar */
+.navicon {
+  display: inline-block;
+  width: 20%;
+}
+
+.navbar {
+  border: 1px solid #9d9d9d;
+  border-radius: 0px;
+  font-size: 30px;
+}
+
+.dropdown {
+  float: right;
+}
+
+.navbar-toggle, .icon-bar {
+  border: 1px solid #9d9d9d;
+}
+
+/* Welcome panel styling */
+
+.cont {
+  padding: 0px;
+  text-align: center;
+  height: 600px;
+  overflow: hidden;
+}
+
+.welcomeImg {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  font-size: 125px;
+  color: #9b9b9b;
+}
+
+/* Style for about me section */
+
+.aboutMeCont h2 {
+  font-size: 50px;
+}
+
+.aboutMeTxt {
+  font-size: 20px;
+}
+
+.quals li {
+  font-size: 20px
+}
+
+.aboutMeImg {
+  width: 70%;
+  border-radius: 100%;
+  margin-left: 15%;
+  margin-top: 20%;
+}
+
+/* Styles for TechXP section */
+
+.langBox {
+  border: 3px solid #9d9d9d;
+  border-radius: 20px;
+  text-align: center;
+  padding: 3px;
+  margin-top: 2px;
+}
+
+.progLangs {
+  font-size: 16px;
+  margin-top: 5px;
+  border: 1px solid #bb44f0;
+  background-color: #bb44f0;
+  border-radius: 20px;
+  color: white;
+}
+
+/*  Styles for Projects section */
+
+#project {
+  margin-bottom: 30px;
+}
+
+.titleCont {
+  height: 100px;
+  line-height: 100px;
+}
+
+.projTitle {
+  text-align: center;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.imageCont {
+  height: 300px;
+  line-height: 300px;
+}
+
+.projImg {
+  width: 100%;
+}
+
+.imgCap {
+  height: 200px;
+  font-size: 16px;
+  overflow: auto;
+  text-align: center;
+}
+
+.projTitleCollapse {
+  font-size: 16px;
+  border: 1px solid #bb44f0;
+  background-color: #bb44f0;
+  text-align: center;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.projImgCollapse {
+  display: block;
+  margin: auto;
+  width: 425px;
+}
+
+.panel {
+  background-color: #9d9d9d;
+  color: white;
+  font-weight: bold;
+}
+
+.panel-footer {
+  background-color: #333;
+}
+
+/* Footer styles */
+
+footer{
+  text-align: center;
+}
+
+footer i {
+  font-size: 3.6em;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1367px) {
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 125px;
+    color: #9b9b9b;
+  }
+}
+
+@media screen and (max-width: 923px) {
+  .navbar {
+    border: 1px solid #9d9d9d;
+    border-radius: 0px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navicon {
+    width: 7%;
+  }
+
+  .welcomeImg {
+    width: 1000px;
+  }
+
+  .overlay {
+    font-size: 100px;
+  }
+
+  .aboutMeCont {
+    text-align: center;
+  }
+
+  ul, li {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+  }
+  .imageCont {
+    height: 300px;
+    line-height: 300px;
+  }
+
+  .projImg {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 55%;
+  }
+
+  .imgCap {
+    height: 150px;
+    font-size: 16px;
+    overflow: auto;
+    text-align: center;
+    margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 497px) {
+  .overlay {
+    font-size: 75px;
+  }
+
+ .projImgCollapse {
+    display: block;
+    margin: auto;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+ .projImgCollapse {
+    display: block;
+    margin: auto;
+    width: 300px;
+  }
+}
